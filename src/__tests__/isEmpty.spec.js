@@ -1,4 +1,4 @@
-import { isEmpty } from "./isEmpty";
+import { isEmpty } from "../isEmpty";
 
 describe("isEmpty", function () {
   it("should return true if the array is empty", function () {

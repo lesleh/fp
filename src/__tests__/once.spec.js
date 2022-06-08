@@ -1,4 +1,4 @@
-import { once } from "./once";
+import { once } from "../once";
 
 describe("once", () => {
   it("should call the function only once", () => {

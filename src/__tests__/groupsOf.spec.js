@@ -1,4 +1,4 @@
-import { groupsOf } from "./groupsOf";
+import { groupsOf } from "../groupsOf";
 
 describe("groupsOf", function () {
   it("should return an empty array if the list is empty", function () {

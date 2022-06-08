@@ -1,4 +1,4 @@
-import { drop } from "./drop";
+import { drop } from "../drop";
 
 describe("drop", function () {
   it("should curry the function", function () {

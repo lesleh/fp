@@ -1,4 +1,4 @@
-const { nary } = require("./nary");
+import { nary } from "../nary";
 
 describe("nary", () => {
   it("ignores extra passed arguments", () => {

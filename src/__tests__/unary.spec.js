@@ -1,4 +1,4 @@
-const { unary } = require("./unary");
+import { unary } from "../unary";
 
 describe("unary", () => {
   it("ignores extra passed arguments", () => {

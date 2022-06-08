@@ -1,4 +1,4 @@
-import { tail } from "./tail";
+import { tail } from "../tail";
 
 describe("tail", () => {
   it("returns the first element of an array", () => {

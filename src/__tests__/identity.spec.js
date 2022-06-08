@@ -1,4 +1,4 @@
-const { identity } = require("./identity");
+import { identity } from "../identity";
 
 describe("identity", () => {
   it("returns the same value", () => {

@@ -1,4 +1,4 @@
-import { prepend } from "./prepend";
+import { prepend } from "../prepend";
 
 describe("prepend", function () {
   it("should prepend an array to another array", function () {

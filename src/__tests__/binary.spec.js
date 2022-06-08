@@ -1,4 +1,4 @@
-const { binary } = require("./binary");
+const { binary } = require("../binary");
 
 describe("binary", () => {
   it("ignores extra passed arguments", () => {

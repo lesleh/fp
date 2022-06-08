@@ -1,4 +1,4 @@
-import { curry } from "./curry";
+import { curry } from "../curry";
 
 describe("curry", function () {
   it("should curry a function", function () {
