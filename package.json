@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "clean": "del dist",
+    "build": "node build.js",
+    "prepack": "pnpm run clean && pnpm run build",
     "test": "jest",
     "test:watch": "jest --watch"
   },
@@ -14,6 +17,7 @@
     "@babel/core": "^7.18.2",
     "@babel/preset-env": "^7.18.2",
     "babel-jest": "^28.1.1",
+    "del-cli": "^4.0.1",
     "esbuild": "^0.14.42",
     "jest": "^28.1.1"
   }
