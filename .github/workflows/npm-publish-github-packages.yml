@@ -38,6 +38,6 @@ jobs:
         with:
           version: 7.1.9
       - run: pnpm install --frozen-lockfile
-      - run: npm publish
+      - run: pnpm publish --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
