@@ -1,14 +1,25 @@
 const esbuild = require("esbuild");
 
+const baseOptions = {
+  entryPoints: ["index.js"],
+  bundle: true,
+  sourcemap: true,
+  //minify: true,
+  target: ["es2017"],
+};
+
 esbuild
   .build({
-    entryPoints: ["index.js"],
-    outdir: "dist",
-    bundle: true,
-    sourcemap: true,
-    //minify: true,
-    splitting: true,
+    ...baseOptions,
+    format: "cjs",
+    outfile: "dist/index.cjs",
+  })
+  .catch(() => process.exit(1));
+
+esbuild
+  .build({
+    ...baseOptions,
     format: "esm",
-    target: ["es2017"],
+    outfile: "dist/index.mjs",
   })
   .catch(() => process.exit(1));

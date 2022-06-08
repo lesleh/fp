@@ -2,7 +2,15 @@
   "name": "@lesleh/fp",
   "version": "0.0.4",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "files": ["dist/**"],
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "module": "./dist/index.mjs"
+    }
+  },
   "scripts": {
     "clean": "del dist",
     "build": "node build.js",
